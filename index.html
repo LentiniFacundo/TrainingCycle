@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Training Cycle</title>
 </head>
-<body>
-    <header>
-        <h1>Training Cycle</h1>
-        <p>GENERADOR DE CICLOS DE ENTRENAMIENTO</p>
+<body data-modo>
+    <header id="Encabezado">
+        <div class="logo">
+            <h1>Training Cycle<img src="img/Logo.svg" alt="Logo"></h1>
+            <p>GENERADOR DE CICLOS DE ENTRENAMIENTO</p>
+        </div>
     </header>
+    <section id="NuevoCiclo">
+        <div class="nuevo-ciclo">
+            <h2>NUEVO CICLO</h2>
+            <label for="Ejercicio">Ejercicio</label>
+            <input id="Ejercicio" maxlength="20" type="text" placeholder="Ej: Elevaciones" name="Ejercicio">
+            <label for="Segundos">Segundos</label>
+            <input id="Segundos" type="number" placeholder="Ej: 30" name="Segundos">
+            <label for="CountDown">Cuenta regresiva</label>
+            <input id="CountDown" type="number" placeholder="Ej: 5" name="CountDown">
+            <button id="Btn-agregar" class="btn-agregar"><img src="img/Btn-mas.svg" alt="Nuevo Ciclo"><span>AGREGAR</span></button>
+        </div>
+    </section>
+    <section id="ListaCiclos">
+        <div class="lista-ciclos">
+            <h2>LISTA DE CICLOS</h2>
+            <table id="Lista" data-modo class="tabla-ciclos">
+                <tbody id="Ciclos">
+                    <tr>
+                        <th>#</th>
+                        <th>EJERCICIO</th>
+                        <th>SEGUNDOS</th>
+                        <th>CUENTA REGRESIVA</th>
+                        <th>ELIMINAR</th>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="img/Btn-cuenta-regresiva.svg" class="btn-abrir-cuenta-regresiva" alt="Comenzar">
+        </div>
+    </section>
+    <button id="Tema" data-tema="claro"><img src="./img/Btn-noche.svg" alt="Tema"></button>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>

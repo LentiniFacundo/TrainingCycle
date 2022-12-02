@@ -1,0 +1,151 @@
+@import url(/css/botones.css);
+@import url(/css/tabla-ciclos.css);
+@import url(/css/modo-oscuro.css);
+
+:root {
+    --color-principal: #FF3D4A;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar {
+    background: inherit;
+    width: .4rem;
+    height: .4rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-principal);
+    border-radius: .3rem;
+    width: .2rem;
+    height: .2rem;
+}
+
+.logo {
+    margin: 0 auto;
+    text-align: center;
+    min-width: 243.2px;
+    min-height: 205.6px;
+}
+
+.logo h1 {
+    font-size: 4rem;
+    color: var(--color-principal);
+    margin-bottom: 0;
+}
+
+.logo p {
+    font-family: 'Anton', sans-serif;
+    font: bold .7rem;
+    color: var(--color-principal);
+}
+
+section {
+    margin-top: 3rem;
+}
+
+.nuevo-ciclo {
+    display: flex;
+    text-align: center;
+    color: var(--color-principal);
+    border: .3rem solid var(--color-principal);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 300px;
+    width: 40%;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.nuevo-ciclo input {
+    color: var(--color-principal);
+    font-weight: bold;
+    border: none;
+    border-bottom: .3rem solid var(--color-principal);
+    padding: .4rem;
+    outline: none;
+    background-color: transparent;
+}
+
+.lista-ciclos {
+    visibility: hidden;
+    margin: 0 auto;
+    text-align: center;
+    overflow-x: auto;
+    scrollbar-width: inherit;
+    min-width: 200px;
+    min-height: 200px;
+    width: 40%;
+    color: var(--color-principal);
+    border: .3rem solid var(--color-principal);
+    border-radius: .5rem;
+    padding: 1rem;
+    opacity: 0;
+    transition: ease .3s;
+}
+
+.lista-ciclos-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+
+.cuenta-regresiva {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 60% 20%;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px; 
+    margin-left: -250px;
+    width: 30rem;
+    height: 10rem;
+    color: var(--color-principal);
+    border: .3rem solid var(--color-principal);
+    background-color: inherit;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.cuenta-regresiva:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.cuenta-regresiva:nth-child(4) {
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#MinutosCR {
+    display: inline;
+    color: var(--color-principal);
+    font-size: 5rem;;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#SegundosCR {
+    display: inline;
+    color: var(--color-principal);
+    font-size: 5rem;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.inactiva {
+    pointer-events: none;
+    opacity: 0.4;
+    filter: blur(4px);
+}

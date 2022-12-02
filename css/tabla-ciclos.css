@@ -1,0 +1,20 @@
+.tabla-ciclos {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffd6d9;
+}
+
+.tabla-ciclos tr:nth-child(even) {
+    background-color: #ffeaec;
+}
+
+.tabla-ciclos th {
+    background-color: #ff8f96;
+    padding: .3rem;
+    font-weight: bolder;
+    font-size: .75rem;
+}
+
+.tabla-ciclos tr:nth-child(even):hover {
+    background-color: #ebc5c8;
+}

@@ -1,0 +1,20 @@
+.modo-oscuro {
+    background-color: #000000;
+}
+
+.modo-oscuro th {
+    background-color: #262525;
+}
+
+.modo-oscuro tr:nth-child(even) {
+    background-color: #343434;
+}
+
+.modo-oscuro tr:nth-child(odd) {
+    background-color: #3b3b3b;
+}
+
+.modo-oscuro tr:nth-child(even):hover, .modo-oscuro tr:nth-child(odd):hover {
+    background-color: #5c5c5c;
+    border-radius: .5rem;
+}
