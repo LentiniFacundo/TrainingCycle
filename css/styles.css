@@ -1,6 +1,6 @@
-@import url(/css/botones.css);
-@import url(/css/tabla-ciclos.css);
-@import url(/css/modo-oscuro.css);
+@import url(../css/botones.css);
+@import url(../css/tabla-ciclos.css);
+@import url(../css/modo-oscuro.css);
 
 :root {
     --color-principal: #FF3D4A;

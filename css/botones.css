@@ -57,7 +57,7 @@
     border-radius: 50%;
     border: none;
     outline: none;
-    background-image: url(/img/Btn-cerrar.svg);
+    background-image: url(../img/Btn-cerrar.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
@@ -80,7 +80,7 @@
     width: 1.9rem;
     height: 1.9rem;
     border-radius: 50%;
-    background-image: url(/img/Btn-Iniciar.svg);
+    background-image: url(../img/Btn-Iniciar.svg);
     background-position: center;
     background-repeat: no-repeat;
     border: none;
